@@ -3,6 +3,8 @@
 This demo illustrates a way of achieving a specific challenging layout via flexbox.
 The original source of the challenge is [this thread](https://lobste.rs/s/fudw9z/the_future_of_layout_with_css_grid_layouts/comments/tmghsh#c_tmghsh).
 
+[View the Demo](http://adripofjavascript.com/flexbox-challenge/index.html)
+
 The requirements of the layout:
 
 > The chunks were site logo, navigation links, copyright footer, and article body text.
