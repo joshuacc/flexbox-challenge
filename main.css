@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Cambria, sans-serif;
+    line-height: 1.6;
+}
+
+.logo img {
+    height: auto;
+    width: 100%;
+}
+
+.nav {
+    background: rgb(220, 255, 220);
+}
+
+.footer {
+    line-height: 2;
+    font-size: 2em;
+    background: rgb(213, 213, 255);
+}
+
+@media (min-width: 781px) {
+    .site-container {
+        display: flex;
+    }
+
+    .logo {
+        order: 1;
+        flex: 1;
+    }
+
+    .nav {
+        /* Reorder display to immediately after logo */
+        order: 2;
+
+        /* Maintain same width as logo */
+        flex: 1;
+
+        /*
+            Shift self and following content to the left by width of self
+            Percentage margins are based on the width of parent.
+        */
+        margin-left: -20%;
+
+        /*
+            20% divided by aspect ratio of image. (7/3)
+            Even vertical percentage margins are based on width of parent. Weird, huh?
+        */
+        margin-top: 8.55%;
+    }
+
+    .content {
+        order: 3;
+        flex: 4;
+    }
+
+    .content-inner {
+        padding: 1.6em;
+    }
+}
